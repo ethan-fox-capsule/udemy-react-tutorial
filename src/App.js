@@ -43,6 +43,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Some random player statistics</h1>
       <button onClick={() => {shuffleBAvgHandler(players.map(p => p.id))}}>Shuffle All Averages</button>
       <>
         {players.map(p =>
