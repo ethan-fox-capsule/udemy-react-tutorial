@@ -2,9 +2,22 @@
     margin: 10px auto;
     /* margin-top: 5px;
     margin-bottom: 5px; */
-    width: 60%;
+    width: 30%;
     border: 2px solid #ccc;
     box-shadow: 0 2px 4px rgb(230, 230, 230);
     padding: 5px;
     text-align: center;
+}
+
+.cardButton {
+    background-color: rgb(27, 198, 228);
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+}
+
+.cardButton:hover {
+    background-color: blue;
 }

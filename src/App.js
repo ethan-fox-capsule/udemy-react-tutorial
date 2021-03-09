@@ -28,6 +28,13 @@ function App() {
     blurb: "I enjoy long walks in the park."
   }])
 
+  const shuffleButtonStyle = {
+    backgroundColor: 'yellow',
+    font: 'black',
+    borderRadius: '4px',
+    boxShadow: '0 1px 1px'
+  }
+
   function getBAvg() {
     return Math.random().toFixed(3)
   }
@@ -44,7 +51,11 @@ function App() {
   return (
     <div className="App">
       <h1>Some random player statistics</h1>
-      <button onClick={() => {shuffleBAvgHandler(players.map(p => p.id))}}>Shuffle All Averages</button>
+      <button
+        style={shuffleButtonStyle}
+        onClick={() => {shuffleBAvgHandler(players.map(p => p.id))}}>
+        Shuffle All Averages
+      </button>
       <>
         {players.map(p =>
           <Player
